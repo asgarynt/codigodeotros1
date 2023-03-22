@@ -1,16 +1,23 @@
+<!-- El programa devuelve el nombre, enlace al blog y locación de Scott Tolinski recibidos mediante una API en un documento HTML mediante el manejo del DOM -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Se corrige el enlace de assets/styles.css a assets/css/styles.css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>APIs</title>
 </head>
 <body>
-    <p class="name"></p>
-    <p class="blog"></p>
+  <!-- Se cambia el selector de class a id debido a que son elementos unicos -->
+    <p id="name"></p>
+    <p id="blog"></p>
+    <!-- Se agrega un parrafo con el id #location que será utilizada en app.js -->
+    <p id="location"></p>
 
-  <script src="../assets/js/app.js"></script>
+    <!-- El enlace es incorrecto se cambia de "../assets/js/app.js" a "/assets/js/app.js" -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
